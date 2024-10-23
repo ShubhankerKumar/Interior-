@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- section - 1 -->
+
+
+  <div class="container-fulid">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <img class="logo" src="photos/10.jpg" alt="">
+        <p class="phone">91+123456789</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- section - 2 -->
+
+
+  <div class="let">
+    <div class="container">
+      <section class="hero-section row content">
+        <!-- Left Side: Text and Buttons -->
+        <div class="col-md-6 text-content">
+          <!-- <div class="info-badge">
+            Now available for up to 1 million attendees!
+          </div> -->
+          <h1 class="display-4">Crafting Unique Interiors for Every Lifestyle</h1>
+          <p>Our team of experienced interior designers brings passion and innovation to every project, turning your
+            vision into.</p>
+        </div>
+
+        <!-- Right Side: Video/Thumbnail -->
+        <div class="col-md-6 video-section text-center">
+          <div class="video-thumbnail">
+            <img src="photos/2.jpg" alt="Zoomlly Webinar Preview">
+            <div class="play-button" id="playButton">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sliding Video Section -->
+    <div class="video-container" id="videoContainer">
+      <span class="close-btn" id="closeButton">&times;</span>
+      <video controls loop autoplay poster="video-poster.jpg">
+        <source src="photos/1.mp4" type="video/mp4">
+        <!-- Add fallback text -->
+      </video>
+    </div>
+
+  </div>
+
+
+  <!-- section - 2 - end -->
+
+
+
+  <!-- section - 3 -->
+
+  <div class="">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <!-- Left Section: Text and Icons -->
+        <div class="col-md-7 left-section">
+          <h1>Transform Your Space into an Elegant Oasis</h1>
+          <p>Our interior design services are crafted to suit every taste and budget. Whether you're seeking a complete
+            home transformation or a room-specific redesign, we offer customized solutions that bring your ideas to life
+          </p>
+          <p>From cozy apartments to luxury homes, we create stunning living spaces tailored to your lifestyle and
+            preferences. Our process includes everything from space planning to selecting the finest materials,
+            furniture, and decor.</p>
+          <!-- Icons under the paragraph -->
+          <!-- <div class="d-flex flex-row">
+                        <div class="icon-box">
+                            <img src="photos/3.jpg" alt="Icon 1">
+                            <p class="sec-2">16 years of trust</p>
+                        </div>
+                        <div class="icon-box">
+                            <img src="photos/4.jpg" alt="Icon 2">
+                            <p class="sec-2">28 states served</p>
+                        </div>
+                        <div class="icon-box">
+                            <img src="photos/5.jpg" alt="Icon 3">
+                            <p class="sec-2">17 MN+ happy customers</p>
+                        </div>
+                    </div> -->
+          <!-- <button type="button" class="btn btn-primary mt-4">Read More</button> -->
+        </div>
+
+
+        <!-- Right Section: Image with Floating Icons -->
+        <div class="col-md-5 right-section">
+          <img src="photos/3.jpg" alt="Main Image" class="main-image rounded-4">
+
+          <!-- Floating Icons on the image -->
+          <img src="photos/comment-1.png" class="floating-icon icon-1" alt="Floating Icon 1">
+          <img src="photos/search.webp" class="floating-icon icon-2" alt="Floating Icon 2">
+          <!-- <img src="icon-3.png" class="floating-icon icon-3" alt="Floating Icon 3"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section - 3 - end -->
+
+
+  <!-- section - 4 -->
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Left side image -->
+      <div class="col-md-6 mb-4 form-1 mt-5">
+        <img src="photos/4.jpg" class="img-fluid" alt="Left Side Image">
+      </div>
+
+      <!-- Right side form -->
+      <div class="col-md-6">
+        <h2 class="mb-4">Register</h2>
+        <form action="" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="pass" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- section - 4 - end -->
+
+
+  <!-- section - 5 -->
+
+  <div class="container py-5 mt-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-lightning-fill"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>Commercial Interior Design</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-graph-up"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>Space Planning and Consultation</h5>
+          <p>Form a graph of ideas with backlinked notes.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-phone"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>Custom Furniture and Decor Selection</h5>
+          <p>Capture ideas on the go, online or offline.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-shield-lock"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>3D Visualization and Renderings</h5>
+          <p>Only you can access your notes.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-calendar-event"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>Project Management</h5>
+          <p>Keep track of meetings and agendas.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-share-fill"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>Publishing</h5>
+          <p>Share anything you write with one click.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-scissors"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>Instant capture</h5>
+          <p>Save snippets from your browser and Kindle.</p>
+        </div>
+      </div>
+      <div class="col card-group">
+        <div class="feature-card text-center">
+          <div class="feature-icon">
+            <i class="bi bi-search"></i> <!-- Replace with actual icon/image -->
+          </div>
+          <h5>How to Make Small Spaces Feel Bigger</h5>
+          <p>Easily recall and index past notes and ideas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section - 5 - end  -->
+
+
+  <!-- section - 6 -->
+
+
+  <marquee class="step mt-5 mb-5" width="100%" direction="Left" height="100px" scrollamount="12">
+    We Are Here To design Your Best House.
+  </marquee>
+
+
+  <!-- section - 6 - end -->
+
+
+  <!-- section - 7  -->
+
+  <div class="container py-5">
+    <div class="profile-container d-flex flex-column flex-md-row align-items-center">
+      <!-- Profile Image -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <img src="photos/5.jpg" alt="Profile" class="profile-img">
+      </div>
+
+      <!-- Profile Text -->
+      <div class="col-md-8">
+        <div class="profile-text">
+          <h1>Design and Planning</h1>
+          <p>Execution</p>
+          <p>
+            Once the concept is approved, we move forward with detailed space planning, material selection, and
+            furniture layout. We ensure that every element is chosen to complement your vision.
+          </p>
+
+          <!-- Profile Buttons -->
+          <div class="profile-buttons mt-4 mb-5">
+            <img src="photos/6.jpg" class="btn btn-resume mx-2">
+            <img src="photos/7.jpg" class="btn btn-projects mx-2">
+            <img src="photos/8.jpg" class="btn btn-contact mx-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section - 7 - end -->
+
+
+  <!-- section - 8  -->
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-4 mb-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="photos/10.jpg" class="rounded-5" alt="logo" width="100px">
+            <!-- Replace with actual logo -->
+            <div>
+              <small class="text-muted">Alternative Medicine</small>
+            </div>
+          </div>
+          <p class="text-muted small">Our Doctors collaborate with our Naturopath to deliver the best of
+            natural and conventional medicine, lifestyle, and nutritional advice.</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Links</h5>
+
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Diseases</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li><a href="#" class="text-white text-decoration-none">Price</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Meet Our Staff</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Connect With Us</h5>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white-50"><i class="bi bi-twitter fs-4 px-2 bg-black py-1 rounded-circle"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-facebook fs-4 px-2 bg-black py-1 rounded-circle"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-google fs-4 px-2 bg-black py-1 rounded-circle"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-instagram fs-4 px-2 bg-black py-1 rounded-circle"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <!-- Copyright Section -->
+      <div class="text-center text-muted small">
+        Copyright © 2017 by Ancora Themes. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- section - 8- end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // Wait for the page to load completely
+    window.addEventListener('load', function () {
+      // Delay for 1 second (1000 ms), then add 'visible' class
+      setTimeout(function () {
+        document.querySelector('.content').classList.add('visible');
+      }, 1000); // 1000ms = 1 second
+    });
+  </script>
+
+
+  <script>
+    const playButton = document.getElementById('playButton');
+    const videoContainer = document.getElementById('videoContainer');
+    const closeButton = document.getElementById('closeButton');
+
+    // Slide the video in from the right when play button is clicked
+    playButton.addEventListener('click', () => {
+      videoContainer.classList.add('active');
+    });
+
+    // Slide the video out to the right when close button is clicked
+    closeButton.addEventListener('click', () => {
+      videoContainer.classList.remove('active');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

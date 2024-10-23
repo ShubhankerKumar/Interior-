@@ -1,0 +1,385 @@
+.content {
+    opacity: 0;
+    transform: translateY(10px); /* Moves content down by 50px */
+    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out; /* Animate both opacity and transform */
+}
+
+/* When visible, set opacity to 1 and bring it to its original position */
+.content.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move content to original position */
+}
+
+
+
+/* section - 1 */
+
+
+
+.logo{
+    height: 70px;
+  }
+  .phone{
+    margin: 20px;
+    font-weight: 700;
+  }
+
+  
+
+/* section - 2 */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Left section styling */
+.left-section {
+    /* padding: 50px; */
+    text-align: left;
+}
+
+.left-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    /* margin-top: 20px; */
+    color: #555;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-box img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Right section with image and floating icons */
+.right-section {
+    position: relative;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Floating icons on the image */
+.floating-icon {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    animation: float 4s ease-in-out infinite;
+}
+.icon-box p{
+    font-size: 15px;
+}
+
+.icon-1 {
+    top: 10%;
+    left: 80%;
+}
+
+.icon-2 {
+    top: 70%;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+
+
+/* section - 3 */
+
+.let {
+    background-color: #0c153a;
+}
+
+.hero-section {
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+}
+
+.text-content {
+    max-width: 100%;
+}
+
+.video-section {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #ffffff;
+}
+
+.play-button svg {
+    fill: #0c153a;
+    width: 30px;
+    height: 30px;
+}
+
+.btn-custom {
+    background-color: #0056ff;
+    color: white;
+    margin-right: 15px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #0046d1;
+}
+
+.info-badge {
+    background-color: #001b5e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.link {
+    color: #a7b1ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: white;
+}
+
+/* Video Slide In */
+.video-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 1.2s ease;
+}
+
+.video-container.active {
+    right: 0;
+}
+
+.video-container video {
+    width: 70%;
+    height: 70%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Responsive Padding for Hero Section */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .video-thumbnail {
+        width: 100%;
+    }
+}
+
+
+/* section - 4 */
+.form-1 img{
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+}
+
+
+
+
+
+
+/* section - 5 */
+
+.feature-card {
+    background-color: #14142b; /* Dark background as per the image */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .feature-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .feature-card {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
+  /* section - 6 */
+
+  
+  .step{
+    text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-weight: 700;
+  }
+
+
+
+  /* section - 7 */
+
+  .profile-img {
+    height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .profile-text p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .profile-buttons .btn {
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 20px;
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+  }
+
+  .btn-resume {
+    background-color: #f8b400;
+    color: white;
+  }
+
+  .btn-projects {
+    background-color: #e94e77;
+    color: white;
+  }
+
+  .btn-contact {
+    background-color: #00aabb;
+    color: white;
+  }
+
+  .profile-section {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    /* For larger screens, adjust the layout to be side by side */
+    .profile-section {
+      text-align: left;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-img {
+      margin-right: 50px;
+    }
+
+    .profile-buttons {
+      text-align: left;
+    }
+  }
+
+
+
+  /* section - 8 */
